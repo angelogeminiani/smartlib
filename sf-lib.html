@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <style>
+            body{
+                font-family: Nobile;
+            }
+        </style>
+        
+        <script type="text/javascript" src="sf-lib.js"></script> 
+        
+
+    </head>
+
+    <body>
+        <div id="test">LOADING LIBRARIES...</div>
+		
+		<script>
+            SFlib.require('./lib/vendor/jquery-1.7.1.js');
+            
+            SFlib.require('http://fonts.googleapis.com/css?family=Nobile:regular,italic,bold&amp;subset=latin', {'media':'only screen'});
+            
+            // test jQuery
+            $(function(){
+                $('#test').html('Success! all libraries are loaded');
+            });
+        </script>
+    </body>
+</html>
