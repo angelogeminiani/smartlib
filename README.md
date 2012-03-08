@@ -28,3 +28,13 @@ Start with SmartLib is very easy:
             });
     </script>
 	
+## Cache invalidation
+
+When you deploy new version of your cached scripts, you need to refresh cache.
+This can be done simply changing value of "VERSION" variable in sf-lib.js.
+Default value is:
+	VERSION = '[RT-VERSION]'
+[RT-VERSION] is a SmartForge Framework pre-processor directive and is automatically updated when SmartForge deploy new version of you packages.
+Even if you are not developing on SmartForge, you can take advantage from Smart Lib.
+
+Remember to manually change value of VERSION variable each time you need cache is refreshed.
